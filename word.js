@@ -10,12 +10,12 @@ var WordBank = function () {
 
 
     //create a for look that checks letter.IswordResquested === true and sends a word
-    if (letter.IsWordRequested) {
+    if (letter.IsWordRequested){
         // for (var i = 0; i < 1; i++){
-        letter.LetterFunction(this.wordBank[this.randomNumber]);
+     this.returnWordletter = this.wordBank[this.randomNumber];
         letter.IsWordRequested == false;
         // }
-
+        
     }
 }
 
