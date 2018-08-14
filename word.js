@@ -1,21 +1,18 @@
-// contructor will contain letter bank
-var letter = require("./letter");
 
-var WordBank = function () {
+
+// contructor will contain letter bank
+var Word = function () {
 
     this.wordBank = ["string", "taste", "shelf", "fool", "excite", "rail", "release", "enjoy", "trade", "dorks", "girl", "sticks",
         "pretend", "relieved", "pickle", "volleyball", "plate", "puncture", "panoramic", "name", "motionless", "wail", "sad", "knowledge"];
 
     this.randomNumber = Math.floor(Math.random() * wordBank.length);
-
-
     //create a for look that checks letter.IswordResquested === true and sends a word
-    if (letter.IsWordRequested){
+     // if (letter.IsWordRequested){
         // for (var i = 0; i < 1; i++){
-     this.returnWordletter = this.wordBank[this.randomNumber];
-        letter.IsWordRequested == false;
+     this.returnWord = this.wordBank[this.randomNumber];
+     //   letter.IsWordRequested == false;
         // }
-        
     }
 }
 
@@ -23,5 +20,5 @@ var WordBank = function () {
 
 
 
-module.exports = WordBank;
+module.exports = Word();
 
