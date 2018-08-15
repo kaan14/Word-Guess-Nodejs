@@ -15,6 +15,7 @@ var wordjs = require("./word.js");
 //create a new Word function, see "word.js" for the constructor; 
 var word = new Word();
 
+var 
 
 //Create a constructor that does above items; 
 var Letter = function () {
@@ -25,24 +26,24 @@ var Letter = function () {
     //Generate random number for wordBank index
     this.randomNumber = Math.floor(Math.random() *this.wordBank.length);
     
-    
-    //create a for look that checks letter.IswordResquested === true and sends a word
-     // if (letter.IsWordRequested){
-        // for (var i = 0; i < 1; i++){
      this.randomWord = this.wordBank[this.randomNumber];
-     //   letter.IsWordRequested == false;
     }
-    
+ 
     this.storeDash = function(){
     this.dash = [];
     for (var i = 0; i < this.randomnWord.length; i++) {
         this.dash.push("-"); 
     }
     this.returnDash = this.dash; 
-    
-    
     console.log(this.returnDash); 
     
+    }
+    
+    //function checks if the letter is already in entered if not puts in a
+    this.check = function(arg1){
+        var letterEntered = []; 
+        
+        
     }
 }
 

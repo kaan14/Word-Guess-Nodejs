@@ -1,17 +1,19 @@
 
+/*Word.js: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:
+
+
+An array of new Letter objects representing the letters of the underlying word
+A function that returns a string representing the word. This should call the function on each letter object (the first function defined in Letter.js) that displays the character or an underscore and concatenate those together.
+A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in Letter.js)
+*/
+
+
+
 
 // contructor will contain letter bank
 var Word = function () {
 
-    this.wordBank = ["string", "taste", "shelf", "fool", "excite", "rail", "release", "enjoy", "trade", "dorks", "girl", "sticks",
-        "pretend", "relieved", "pickle", "volleyball", "plate", "puncture", "panoramic", "name", "motionless", "wail", "sad", "knowledge"];
-
-    this.randomNumber = Math.floor(Math.random() * wordBank.length);
-    //create a for look that checks letter.IswordResquested === true and sends a word
-     // if (letter.IsWordRequested){
-        // for (var i = 0; i < 1; i++){
-     this.returnWord = this.wordBank[this.randomNumber];
-     //   letter.IsWordRequested == false;
+   
         // }
     }
 }
